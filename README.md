@@ -1,2 +1,343 @@
-# yerba-del-fardo
-este proyecto consta e una pagina web con la funcion de apoyar un emprendimiento propio de yerba mate 
+[Yerba Del Fardo (1).html](https://github.com/user-attachments/files/33314314/Yerba.Del.Fardo.1.html)
+<!DOCTYPE html>
+<!-- saved from url=(0080)http://127.0.0.1:5500/curso/CURSO_HTML/yerba_del_fardo.html/del-fardo-index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Yerba Del Fardo</title>
+<link rel="stylesheet" href="./Yerba Del Fardo_files/css2">
+<style>
+/* Layout: the bag label as a page — cream ground, one bottle-green band, engraved illustrations, thin circle motif. Single deliberate light look, matching the packaging. */
+:root{
+  --crema:#F2ECDF; --crema2:#E8E0CE; --kraft:#C49A63; --kraftOsc:#8A6A3E;
+  --botella:#2C3A26; --botella2:#22301D; --tinta:#1F2A1B; --tinta2:#55604C; --linea:rgba(31,42,27,.18);
+  --display:'Marcellus','Trajan Pro',Georgia,serif;
+  --body:'Montserrat','Helvetica Neue',Arial,sans-serif;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--crema)}
+body{margin:0;background:var(--crema);color:var(--tinta);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--kraftOsc);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+.label{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+p{margin:0}
+
+/* logo, as on the bag: DEL over ·FARDO· */
+.logo{display:inline-flex;flex-direction:column;align-items:center;line-height:.9;text-decoration:none;font-family:var(--display);color:var(--tinta)}
+.logo small{font-size:.55em;letter-spacing:.08em}
+.logo span{letter-spacing:.06em}
+.logo span::before,.logo span::after{content:"·";padding:0 .15em}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;background:var(--botella);color:var(--crema);text-decoration:none;font-weight:600;font-size:15px;letter-spacing:.04em;border-radius:999px;transition:background .2s,transform .2s}
+.btn:hover{background:var(--botella2);transform:translateY(-1px)}
+.btn svg{flex:none}
+.btn.claro{background:var(--crema);color:var(--botella)}
+.btn.claro:hover{background:#fff}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:rgba(242,236,223,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+header .logo{font-size:26px}
+header nav{display:flex;gap:28px;font-size:13px;font-weight:500}
+header nav a{text-decoration:none;color:var(--tinta2)}
+header nav a:hover{color:var(--tinta)}
+header .btn{min-height:44px;padding:0 18px;font-size:14px}
+
+/* hero */
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(24px,4vw,56px);align-items:center;padding-block:clamp(40px,7vw,88px)}
+.hero-text{display:flex;flex-direction:column;gap:24px;min-width:0}
+.hero .label{color:var(--kraftOsc)}
+.hero h1{font-size:clamp(42px,6vw,76px);line-height:1.02}
+.hero .lead{font-size:18px;color:var(--tinta2);max-width:30em}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px}
+.envio{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--tinta2)}
+.envio svg{flex:none;color:var(--kraftOsc)}
+.hero-img{position:relative;min-width:0}
+.hero-img::before{content:"";position:absolute;width:78%;aspect-ratio:1;left:14%;top:2%;border-radius:50%;border:2px solid var(--crema2);box-shadow:0 0 0 14px rgba(232,224,206,.45)}
+.hero-img img{position:relative;width:100%;filter:drop-shadow(0 30px 40px rgba(60,45,20,.18));animation:sube 1.1s cubic-bezier(.2,.7,.2,1) both}
+@keyframes sube{from{transform:translateY(24px)}to{transform:none}}
+
+/* green band, like the label */
+.banda{background:var(--botella);color:var(--crema)}
+.banda .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;padding-block:22px;font-size:13px;font-weight:500;letter-spacing:.16em;text-transform:uppercase}
+.banda i{font-style:normal;color:var(--kraft)}
+
+section{scroll-margin-top:80px}
+.sec{padding-block:clamp(64px,10vw,120px)}
+.sec-head{display:flex;flex-direction:column;gap:14px;max-width:640px}
+.sec-head .label{color:var(--kraftOsc)}
+.sec-head h2{font-size:clamp(34px,4.6vw,54px);line-height:1.08}
+.sec-head p{color:var(--tinta2);font-size:17px}
+
+/* atributos */
+.atributos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:56px;border-top:1px solid var(--tinta)}
+.attr{display:flex;flex-direction:column;gap:12px;padding:28px 24px 8px 0}
+.attr+.attr{padding-left:24px;border-left:1px solid var(--linea)}
+.attr svg{color:var(--kraftOsc)}
+.attr h3{font-size:24px}
+.attr p{font-size:15px;color:var(--tinta2)}
+
+/* origen */
+.origen{background:var(--crema2)}
+.origen .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:center}
+.origen-art{display:flex;flex-direction:column;gap:28px;min-width:0}
+.historia{border-left:2px solid var(--kraft);padding-left:18px;font-size:15px;color:var(--tinta2);font-style:italic}
+.ficha{background:var(--crema);padding:clamp(22px,3vw,36px);border:1px solid var(--linea);min-width:0}
+.ficha-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-bottom:16px;border-bottom:1px solid var(--tinta)}
+.ficha-head h3{font-size:26px}
+.ficha dl{margin:0}
+.fila{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:12px;padding:14px 0;border-bottom:1px solid var(--linea)}
+.fila:last-child{border-bottom:0}
+.fila dt{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--tinta2);padding-top:3px}
+.fila dd{margin:0;font-family:var(--display);font-size:19px}
+
+/* cebar: a real sequence, so it is numbered */
+.pasos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,3vw,40px);margin-top:56px;padding:0;list-style:none;counter-reset:paso}
+.pasos li{counter-increment:paso;display:flex;flex-direction:column;gap:10px;padding-top:18px;border-top:1px solid var(--tinta)}
+.pasos li::before{content:counter(paso);font-family:var(--display);font-size:44px;line-height:1;color:var(--kraftOsc)}
+.pasos h3{font-size:22px}
+.pasos p{font-size:15px;color:var(--tinta2)}
+
+/* pedido */
+.pedido{background:var(--botella);color:var(--crema)}
+.pedido .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:center}
+.pedido .label{color:var(--kraft)}
+.pedido h2{font-size:clamp(36px,5vw,60px);line-height:1.05}
+.pedido-text{display:flex;flex-direction:column;gap:20px;min-width:0}
+.pedido-text>p{color:rgba(242,236,223,.78);font-size:17px;max-width:30em}
+.pedido-card{display:flex;flex-direction:column;gap:20px;padding:clamp(22px,3vw,34px);border:1px solid rgba(242,236,223,.25);min-width:0}
+.pedido-card ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px;counter-reset:p}
+.pedido-card li{counter-increment:p;display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;font-size:15px;color:rgba(242,236,223,.85)}
+.pedido-card li::before{content:counter(p);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;border:1px solid var(--kraft);color:var(--kraft);font-size:13px;font-weight:600}
+.numero{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;padding-top:18px;border-top:1px solid rgba(242,236,223,.2)}
+.numero span{font-family:var(--display);font-size:24px;letter-spacing:.02em;user-select:all;font-variant-numeric:tabular-nums}
+.copiar{min-height:40px;padding:0 14px;background:transparent;border:1px solid rgba(242,236,223,.4);color:var(--crema);font:600 13px var(--body);border-radius:999px;cursor:pointer}
+.copiar:hover{border-color:var(--crema)}
+
+footer{background:var(--botella2);color:rgba(242,236,223,.7)}
+footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding-block:32px;font-size:13px}
+footer .marca{display:flex;align-items:center;gap:16px}
+footer .marca img{width:72px;filter:invert(1) sepia(.3) brightness(1.4);opacity:.85}
+footer .logo{color:var(--crema);font-size:22px}
+
+/* floating WhatsApp on phones */
+.flotante{display:none}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-img{max-width:560px;margin:0 auto;width:100%}
+  .atributos{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .attr:nth-child(3){padding-left:0;border-left:0}
+  .origen .wrap,.pedido .wrap{grid-template-columns:1fr}
+  .pasos{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  header .btn{display:none}
+  .banda .wrap{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;text-align:center}
+  .banda i{display:none}
+  .atributos{grid-template-columns:1fr}
+  .attr,.attr+.attr{padding:24px 0 20px;border-left:0}
+  .attr+.attr{border-top:1px solid var(--linea)}
+  .flotante{display:inline-flex;position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;box-shadow:0 10px 30px rgba(20,30,15,.35)}
+  footer .wrap{padding-bottom:96px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-img img{animation:none}.btn{transition:none}}
+</style>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="http://127.0.0.1:5500/curso/CURSO_HTML/yerba_del_fardo.html/del-fardo-index.html#top" aria-label="Del Fardo, inicio"><small>DEL</small><span>FARDO</span></a>
+    <nav aria-label="Secciones">
+      <a href="http://127.0.0.1:5500/curso/CURSO_HTML/yerba_del_fardo.html/del-fardo-index.html#yerba">La yerba</a><a href="http://127.0.0.1:5500/curso/CURSO_HTML/yerba_del_fardo.html/del-fardo-index.html#origen">Origen</a><a href="http://127.0.0.1:5500/curso/CURSO_HTML/yerba_del_fardo.html/del-fardo-index.html#cebar">Cebar</a><a href="http://127.0.0.1:5500/curso/CURSO_HTML/yerba_del_fardo.html/del-fardo-index.html#pedido">Pedir</a>
+    </nav>
+    <a class="btn js-wa" href="https://wa.me/5492323336549?text=Hola!%20Quiero%20pedir%20una%20Yerba%20Del%20Fardo%20de%20500%20gr.%20%C2%BFQu%C3%A9%20precio%20tiene%3F" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <div class="label">Yerba mate · Apóstoles, Misiones</div>
+      <h1>Yerba mate Del Fardo.</h1>
+      <p class="lead">Despalada, de molienda fina y agroecologica. Viene de la capital nacional de la yerba mate y llega a tu casa en Luján.</p>
+      <div class="cta-row">
+        <a class="btn js-wa" href="https://wa.me/5492323336549?text=Hola!%20Quiero%20pedir%20una%20Yerba%20Del%20Fardo%20de%20500%20gr.%20%C2%BFQu%C3%A9%20precio%20tiene%3F" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"></path></svg>
+          consulta por tu paquete
+        </a>
+        <span class="envio"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>Envíos en Luján y alrededores</span>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="./Yerba Del Fardo_files/del-fardo-producto.png" width="1289" height="1095" alt="Bolsa kraft de Yerba Mate Del Fardo, 500 gramos, con una pila de yerba suelta adelante">
+    </div>
+  </div>
+</section>
+
+<div class="banda" aria-label="Características">
+  <div class="wrap"><span>Despalada</span><i aria-hidden="true">·</i><span>Molienda fina</span><i aria-hidden="true">·</i><span>Secado a leña</span><i aria-hidden="true">·</i><span>agroecologica
+  
+  </span></div>
+</div>
+
+<section id="yerba" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="label">La yerba</div>
+      <h2>El camino que hizo tu paquete hasta llegar a tu casa.</h2>
+    </div>
+    <div class="atributos">
+      <div class="attr">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3c5 4 6 10 0 18C6 13 7 7 12 3Z"></path><path d="M12 7v12"></path></svg>
+        <h3>cosecha</h3>
+        <p>Una familia de productores en Apostoles Msiones cosechan cada año lo que la tierra provea de yerba mate.</p>
+      </div>
+      <div class="attr">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="6" cy="8" r="1.2"></circle><circle cx="12" cy="6" r="1.2"></circle><circle cx="18" cy="9" r="1.2"></circle><circle cx="8" cy="14" r="1.2"></circle><circle cx="15" cy="15" r="1.2"></circle><circle cx="11" cy="19" r="1.2"></circle></svg>
+        <h3>Molienda y Secado</h3>
+        <p>Los mismos productores encargados de la cosecha son los responsables el ahumado y sabor que adquiere la yerba durante el secado y molienda.</p>
+      </div>
+      <div class="attr">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3c1 3 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 1-9Z"></path><path d="M5 21h14"></path></svg>
+        <h3>De Misiones a Buenos Aires</h3>
+        <p>La yerba ya empaquetada es trasladada hasta buenos aires.</p>
+      </div>
+      <div class="attr">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle><path d="M12 4v5M12 15v5M4 12h5M15 12h5"></path></svg>
+        <h3>Del Fardo a tu casa</h3>
+        <p>Una vez en buenos aires procedemos a la seleccion de la yerba y su empaquetado,dejando cada paquete listo para ser entregado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="origen" class="sec origen">
+  <div class="wrap">
+    <div class="origen-art">
+      <div class="sec-head">
+        <div class="label">Origen</div>
+        <h2>Desde Apóstoles, la capital nacional de la yerba mate.</h2>
+      </div>
+      <img src="./Yerba Del Fardo_files/grabado-carreta.png" width="694" height="264" alt="Grabado de una carreta de bueyes cargada de fardos de yerba, con un hombre caminando al lado">
+      <p class="historia">del fardo nace como una respuesta a la auscencia de una yerba que porte la escencia del mate argentino pero tambien entendiendo que la molienda fina y despalada proveniente del uruguay permite disfrutar la totalidad de la experiencia matera.Proximamente vas a poder disfrutar Del fardo en diferentes versiones.
+
+     </p>
+    </div>
+    <div class="ficha">
+      <div class="ficha-head"><h3>Ficha del paquete</h3><span class="label" style="color:var(--kraftOsc)">500 gr</span></div>
+      <dl>
+        <div class="fila"><dt>Origen</dt><dd>Apóstoles, Misiones</dd></div>
+        <div class="fila"><dt>Cosecha</dt><dd>2023</dd></div>
+        <div class="fila"><dt>Corte</dt><dd>Despalada</dd></div>
+        <div class="fila"><dt>Molienda</dt><dd>Fina, artesanal</dd></div>
+        <div class="fila"><dt>Secado</dt><dd>A leña</dd></div>
+    
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="cebar" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="label">Cebar</div>
+      <h2>Una yerba sin palo pide otro pulso.</h2>
+      <p>Al no tener palo, el agua circula distinto. Así sale bien desde el primer mate.</p>
+    </div>
+    <ol class="pasos">
+      <li><h3>Llená y sacudí</h3><p>Mate a tres cuartos. Tapalo con la mano y sacudilo boca abajo para que el polvo fino suba.</p></li>
+      <li><h3>Armá la montañita</h3><p>Inclinalo, mojá el hueco con un chorrito de agua tibia o a temperatura mate y esperá un minuto a que la hoja se hinche.</p></li>
+      <li><h3>Agua a 70–80 °C</h3><p>Nunca hervida. Bombilla al fondo, del lado del hueco, y no la muevas más.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="pedido" class="sec pedido">
+  <div class="wrap">
+    <div class="pedido-text">
+      <div class="label">Pedí tu paquete</div>
+      <h2>Te la llevamos en Luján.</h2>
+      <p>Escribinos por WhatsApp y coordinamos la entrega en Luján y alrededores. Te pasamos el precio por ahí.</p>
+      <div><a class="btn claro js-wa" href="https://wa.me/5492323336549?text=Hola!%20Quiero%20pedir%20una%20Yerba%20Del%20Fardo%20de%20500%20gr.%20%C2%BFQu%C3%A9%20precio%20tiene%3F" target="_blank" rel="noopener">Consultar precio y pedir</a></div>
+    </div>
+    <div class="pedido-card">
+      <ol>
+        <li>Tocá el botón y mandanos el mensaje. Ya va escrito.</li>
+        <li>Te confirmamos el precio y cuántos paquetes querés.</li>
+        <li>Coordinamos día y lugar de entrega.</li>
+      </ol>
+      <div class="numero">
+        <span id="numero">+54 9 2323 33-6549</span>
+        <button class="copiar" id="copiar" type="button">Copiar número</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="marca">
+      <img src="./Yerba Del Fardo_files/grabado-fardo.png" width="250" height="128" alt="">
+      <span class="logo"><small>DEL</small><span>FARDO</span></span>
+    </div>
+    <span>Yerba mate elaborada · Apóstoles, Misiones · Envíos en Luján</span>
+  </div>
+</footer>
+
+<a class="btn flotante js-wa" href="https://wa.me/5492323336549?text=Hola!%20Quiero%20pedir%20una%20Yerba%20Del%20Fardo%20de%20500%20gr.%20%C2%BFQu%C3%A9%20precio%20tiene%3F" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+
+<script>
+(function(){
+  var msg = encodeURIComponent('Hola! Quiero pedir una Yerba Del Fardo de 500 gr. ¿Qué precio tiene?');
+  document.querySelectorAll('.js-wa').forEach(function(a){ a.href = 'https://wa.me/5492323336549?text=' + msg; });
+  var btn = document.getElementById('copiar');
+  btn.addEventListener('click', function(){
+    var done = function(){ btn.textContent = 'Número copiado'; setTimeout(function(){ btn.textContent = 'Copiar número'; }, 2000); };
+    var fallback = function(){ var r = document.createRange(); r.selectNodeContents(document.getElementById('numero')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+    try { navigator.clipboard.writeText('+5492323336549').then(done, fallback); } catch (e) { fallback(); }
+  });
+})();
+</script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
